@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <div class="page-container">
+    <div class="heading"><h4>Login-Form</h4></div>
+    <div class="row login-top">
+  	  <div class="col">
+        <mat-card #callAPIDialog>
+          <mat-card-header>
+              <mat-card-title>Ang-Mat Login Form</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="login-form">
+              <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+               <mat-form-field  class="form-element">
+                  <input matInput type="text" placeholder="Username" formControlName="userName">
+                  <mat-error *ngIf="loginForm.get('userName').hasError('required')">
+                  Username is required</mat-error>
+                  
+                 
+
+                </mat-form-field>
+
+                <mat-form-field  class="form-element">
+                  <input matInput type="email" placeholder="Email" formControlName="email">
+                   <mat-error *ngIf="loginForm.get('email').hasError('required')">
+                  Email is required</mat-error>
+                  <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required');">
+                  Invalid Email</mat-error>
+                </mat-form-field>
+
+                <mat-form-field  class="form-element">
+                  <input matInput type="password" placeholder="password" formControlName="password">
+                   <mat-error *ngIf="loginForm.get('password').hasError('required')">
+                  Password is required</mat-error>
+                </mat-form-field>
+                
+                <mat-card-actions>
+                  <button [disabled]="loginForm.invalid" class="btn btn-primary btn-sm btn-block" mat-raised-button type="submit">
+                    Login
+                  </button>
+                </mat-card-actions>
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  Something Wrong.Try Again
+                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+						   </form>
+            </div>
+          </mat-card-content>
+				  </mat-card>
+      </div>
+      <div  class="col">
+        <mat-card>
+          <mat-card-content>
+            <mat-tab-group>
+                <mat-tab label="Summary"> 
+                  <ul class="desc">
+                       <li><code>mat-form-field</code> is a component used to wrap several Angular Material components and apply common Text field styles such as the underline, floating label, and hint messages.</li>
+                       <li> <code>matInput</code> is a directive that allows native <code>input</code> and <code>textarea</code> elements to work with <code>mat-form-field</code></li>
+                       <li>
+                        login button is disabled because of empty fields,
+                       </li>
+                       <li>
+                        Display login failed message based on login logic.
+                       </li>
+                  </ul>
+                </mat-tab>
+                <mat-tab label="Ts"> 
+                      <pre class="ScrollStyle">
+                         <code [innerHTML]="Tscode" class="code-color"></code>
+                      </pre>
+                      
+                      
+                </mat-tab>
+                <mat-tab label="Html">
+                <pre class="ScrollStyle code-color"><code>{{this.code}}</code></pre>
+                </mat-tab>
+                <mat-tab label="Css" >
+                <pre class="ScrollStyle code-color">
+                   <code [innerHTML]="Csscode"></code>
+                </pre>
+                </mat-tab>
+            </mat-tab-group>
+          </mat-card-content>
+        </mat-card>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        
