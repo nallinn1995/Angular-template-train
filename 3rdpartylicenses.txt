@@ -415,9 +415,15 @@ MIT
 
 @angular/material/tabs
 
+@angular/material/core
+
+@angular/material/radio
+
 @angular/material/dialog
 
 @angular/material/datepicker
+
+@angular/material/select
 
 @angular/material/tooltip
 
