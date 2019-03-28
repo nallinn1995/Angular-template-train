@@ -1,0 +1,56 @@
+.form-element {
+  padding: 5px 0px 0px 2px;
+  width: 100%;
+}
+
+.heading{
+	color:#E9BD43;
+	font-family: 'Inconsolata', monospace;
+}
+
+.form-element {
+  padding: 5px 0px 5px 2px;
+  width: 100%;
+}
+
+mat-card-header{
+	text-align: center;
+    justify-content: center;
+}
+
+mat-card-title{
+	color:#007bff;
+	font-family: 'Inconsolata', monospace;;
+}
+
+.desc{
+	margin-top:20px;
+}
+
+.register-top{
+	padding-top: 5px;
+}
+
+.align-button{
+	justify-content:center;
+	text-align: center;
+}
+
+.ScrollStyle
+{
+    max-height:250px;
+    overflow-y: scroll;
+}
+
+.code-color{
+	color:#691e1e;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-radio-button {
+    padding-left: 5px;
+}
