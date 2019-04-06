@@ -54,3 +54,22 @@ mat-card-title{
 .example-radio-button {
     padding-left: 5px;
 }
+
+.image{
+	width:100px;
+	height:100px;
+}
+
+.content{
+  
+position:absolute;
+top:20%;
+right:0;
+width:38%;
+padding-right:2rem;
+text-align:center;
+  }
+
+  .example-card{
+  	
+  }

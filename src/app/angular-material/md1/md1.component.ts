@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class Md1Component implements OnInit {
 
   constructor() { }
-
+states: any[] = [
+    {value: '0', viewValue: 'Tamil Nadu'},
+    {value: '1', viewValue: 'Maharastra'},
+    {value: '2', viewValue: 'Kerala'}
+  ];
   ngOnInit() {
   }
 

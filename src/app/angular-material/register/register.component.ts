@@ -375,11 +375,19 @@ mat-card-title{
      country:[''],
      gender:[''],
      password:['',[this.checkPassword]],
-     confirmpassword:['']
+     confirmpassword:[''],
+     image:['']
 
   	},{validator: this.passwordMatchValidator});
+      
+
   }
     get f() { return this.registerForm.controls; }
+
+getImage(registerForm: FormGroup){
+let image=registerForm.controls.image.value;
+console.log("src",image);
+}
 
 checkPassword(control){
 let enteredPassword = control.value
@@ -387,7 +395,7 @@ let enteredPassword = control.value
     return (!passwordCheck.test(enteredPassword) && enteredPassword) ? { 'requirements': true } : null;
     enteredPassword;
 }
-
+ 
 passwordMatchValidator(registerForm: FormGroup) {
   // return frm.controls['password'].value === frm.controls['confirmpassword'].value ? null : {'mismatch': true};
   let pass =  registerForm.controls.password.value;

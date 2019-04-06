@@ -11,6 +11,7 @@ const routes: Routes = [
 {path:'home',loadChildren:'../home/home.module#HomeModule'},
 {path:'temp1',loadChildren:'../templates/templates.module#TemplatesModule'},
 {path:'angular-material',loadChildren:'../angular-material/angular-material.module#AngularMaterialModule'},
+{path:'highcharts',loadChildren:'../high-charts/high-charts.module#HighChartsModule'}
 ]
 }
 ];

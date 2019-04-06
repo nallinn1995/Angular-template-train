@@ -4,3 +4,30 @@ body{
    font-family: 'Inconsolata', monospace;;
 
 }
+
+.content-wrapper{
+	 max-width: 960px; /** 20px smaller, to fit the paddings on the sides */
+
+   padding-right: 25px;
+   padding-left:  25px;
+}
+
+.side-heading{
+	color: #007bff;
+}
+
+.para-align{
+
+}
+
+.highchart1 h3{
+	
+}
+
+.carousel{
+padding:20px;
+}
+
+/*div#demo {
+    width:70%;
+}*/
